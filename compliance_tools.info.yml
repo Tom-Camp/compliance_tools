@@ -1,0 +1,5 @@
+name: Compliance Tools
+description: Drush commands to help with U.S. government compliance.
+core: 8.x
+type: module
+package: Compliance

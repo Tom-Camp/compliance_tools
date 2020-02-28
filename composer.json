@@ -1,0 +1,25 @@
+{
+    "name": "compliance_tools",
+    "type": "drupal-module",
+    "description": "A module containing tools to help with U.S. government compliance.",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/compliance_tools",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/compliance_tools",
+        "source": "http://cgit.drupalcode.org/compliance_tools"
+    },
+    "autoload": {
+      "psr-4": {
+        "Drupal\\compliance_tools\\": "src/"
+      }
+    },
+    "extra": {
+      "drush": {
+        "services": {
+          "drush.services.yml": "^9"
+        }
+      }
+    }
+}

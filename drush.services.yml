@@ -1,0 +1,5 @@
+services:
+  compliance_tools.commands:
+    class: \Drupal\compliance_tools\Commands\ListPrivilegedUsersCommands
+    tags:
+      - { name: drush.command }
