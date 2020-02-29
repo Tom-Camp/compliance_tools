@@ -7,3 +7,7 @@ services:
     class: \Drupal\compliance_tools\Commands\GetFailedLogins
     tags:
       - { name: drush.command }
+  verification_required.command:
+    class: \Drupal\compliance_tools\Commands\RequireVerification
+    tags:
+      - { name: drush.command }

@@ -6,8 +6,6 @@ The Compliance Tools module provides Drush commands to help with government
 compliance. Currently, the module will list privileged users based either on
 roles or permissions and will return the settings for failed logins.
 
-Watch this space for additional tools.
-
 ## Requirements
 
 This module is designed to work with Drupal 8.4 or greater and Drush 9 or
@@ -37,6 +35,15 @@ permissions.
 
 To get the settings for failed logins and lockout window run:
 `drush ct:failed-logins`
+
+This commands validates NIST 800-53 control AC-7 (a) and AC-7 (b) and SC-5.
+
+### Validate email verification required
+
+Get the setting for require email verification when a visitor creates an
+account: `drush ct:email-verification`
+
+This commands validates NIST 800-53 control IA-4 (b).
 
 ## Maintainers
 
