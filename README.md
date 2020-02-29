@@ -35,7 +35,7 @@ permissions.
 
 ### Get Failed Login attempt settings
 
-To get the settings for failed logins run:
+To get the settings for failed logins and lockout window run:
 `drush ct:failed-logins`
 
 ## Maintainers
