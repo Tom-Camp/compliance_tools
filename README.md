@@ -4,7 +4,7 @@
 
 The Compliance Tools module provides Drush commands to help with government
 compliance. Currently, the module will list privileged users based either on
-roles or permissions.
+roles or permissions and will return the settings for failed logins.
 
 Watch this space for additional tools.
 
@@ -20,16 +20,23 @@ greater.
 
 ## Usage
 
-Once the module is enabled, run:
+### List Privileged Users
+
+To list all users with the _Administrator_ role run:
 `drush ct:privilege-users --role=Administrator`
-to list all users with the _Administrator_ role. You can list multiple roles
-using a comma separated list, for example:
+
+You can list multiple roles using a comma separated list, for example:
 `drush ct:privilege-users --role=Administrator, Manager`
 
 You can also use the _drush_ alias, for example:
 `drush ct-lpu --perms="Administer users, Change own username"`
 to list all users with the _Administer users_ and _Change own users_
 permissions.
+
+### Get Failed Login attemp settings
+
+To get the settings for failed logins run:
+`drush ct:failed-logins`
 
 ## Maintainers
 
