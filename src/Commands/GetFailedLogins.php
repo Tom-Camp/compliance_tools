@@ -12,7 +12,9 @@ use Drush\Commands\DrushCommands;
 class GetFailedLogins extends DrushCommands {
 
   /**
-   * List privileged users.
+   * Display the settings for failed logins and lockout window.
+   *
+   * This commands validates NIST 800-53 control AC-7 (a) and AC-7 (b).
    *
    * @command ct:failed-logins
    * @aliases ct-fl
@@ -20,8 +22,11 @@ class GetFailedLogins extends DrushCommands {
    *   Get the settigns for failed logins.
    */
   public function getLoginAttempts() {
-    $loginSettings = \Drupal::config('user.flood')->get('user_limit');
-    $this->output()->writeln('Failed logins: ' . $loginSettings);
+    $loginAttempts = \Drupal::config('user.flood')->get('user_limit');
+    $this->output()->writeln('Failed logins: ' . $loginAttempts);
+    $loginAttempts = \Drupal::config('user.flood')->get('user_window');
+    $time = $loginAttempts / 60;
+    $this->output()->writeln('Lockout window: ' . $time . ' minutes');
   }
 
 }
