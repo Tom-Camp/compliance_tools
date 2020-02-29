@@ -53,7 +53,7 @@ Current maintainers:
 
 This project has been sponsored by:
 
-* [CivicActions, Inc.](https://www.drupal.org/civicactions)
+* [CivicActions, Inc.](https://www.drupal.org/civicactions)  
   CivicActions empowers U.S. government agencies to deliver delightful digital
   experiences that are as innovative and rewarding as popular online and mobile
   consumer services.
