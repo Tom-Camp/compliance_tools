@@ -23,6 +23,7 @@ class ListPrivilegedUsersCommands extends DrushCommands {
    * @option roles The role to check.
    * @option perms The permissions to check.
    * @usage ct:list-privilege-users --role administrator
+   *   Generate a list of user with administrator role.
    */
   public function listUsers($options = ['roles' => '', 'perms' => '']) {
     $this->output()->writeln('');

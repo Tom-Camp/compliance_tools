@@ -1,5 +1,9 @@
 services:
-  compliance_tools.commands:
+  privileged_users.command:
     class: \Drupal\compliance_tools\Commands\ListPrivilegedUsersCommands
+    tags:
+      - { name: drush.command }
+  failed_logins.command:
+    class: \Drupal\compliance_tools\Commands\GetFailedLogins
     tags:
       - { name: drush.command }
