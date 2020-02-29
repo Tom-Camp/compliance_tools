@@ -33,7 +33,7 @@ You can also use the _drush_ alias, for example:
 to list all users with the _Administer users_ and _Change own users_
 permissions.
 
-### Get Failed Login attemp settings
+### Get Failed Login attempt settings
 
 To get the settings for failed logins run:
 `drush ct:failed-logins`
