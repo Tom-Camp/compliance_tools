@@ -20,20 +20,20 @@ greater.
 
 ### List Privileged Users
 
-To list all users with the _Administrator_ role run:
+To list all users with the _Administrator_ role run:  
 `drush ct:privilege-users --role=Administrator`
 
-You can list multiple roles using a comma separated list, for example:
+You can list multiple roles using a comma separated list, for example:  
 `drush ct:privilege-users --role=Administrator, Manager`
 
-You can also use the _drush_ alias, for example:
-`drush ct-lpu --perms="Administer users, Change own username"`
+You can also use the _drush_ alias, for example:  
+`drush ct-lpu --perms="Administer users, Change own username"`  
 to list all users with the _Administer users_ and _Change own users_
 permissions.
 
 ### Get Failed Login attempt settings
 
-To get the settings for failed logins and lockout window run:
+To get the settings for failed logins and lockout window run:  
 `drush ct:failed-logins`
 
 This commands validates NIST 800-53 control AC-7 (a) and AC-7 (b) and SC-5.
@@ -41,7 +41,8 @@ This commands validates NIST 800-53 control AC-7 (a) and AC-7 (b) and SC-5.
 ### Validate email verification required
 
 Get the setting for require email verification when a visitor creates an
-account: `drush ct:email-verification`
+account:  
+`drush ct:email-verification`
 
 This commands validates NIST 800-53 control IA-4 (b).
 
